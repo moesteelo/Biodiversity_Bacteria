@@ -1,0 +1,79 @@
+nav {
+    background-image: url("../image/??");
+    background-size: 100% 100%;
+    border-bottom-style: solid;
+    border-bottom-color: azure;
+    border-bottom-width: 1.5px;
+
+}
+
+#head-title {
+    font-weight: bold;
+    color:#15458d ;
+}
+
+#guage {
+    padding: 0%;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.966);
+    font-weight: bold;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+h2 {
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 1px 1px 0 #000;
+    color: whitesmoke
+}
+
+p { 
+    font-size: 15px;
+}
+
+.info { 
+    background-color: whitesmoke;
+}
+
+.bar-container {
+    margin-left: 20px;
+}
+
+.well {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #1f77b4;
+    margin-bottom: 0px;
+}
+
+.panel {
+    margin-top: 0px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #1f77b4;
+}
+
+.panel-heading {
+    background-color: #1f77b4;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #1f77b4;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+.gauge-container {
+   margin-left: 30px; 
+}
+
+.bubble-conntainer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #F4F6F6;
+}
