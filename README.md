@@ -20,9 +20,11 @@ This project presents three data charts that display bacteria samples. The Test 
  ## View the Deployed Project here: [https://moesteelo.github.io/Biodiversity_Bacteria/]
  
  ## Resouces:
- JavaScript: [plot.js](plot.js)
+ **JavaScript:** [plot.js](plot.js)
  
- Images: [images](./images)
+ **Images:** [images](./images)
+ 
+ **HTML:** [index.html](index.html)
  
  
   
