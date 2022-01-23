@@ -169,23 +169,23 @@ function buildCharts(sample) {
 
     //4. Create the trace for the guague chart.
     // filter metadata on id seletion, select first index to access data inside array
-    console.log(data. metadata);
+    console.log(data.metadata);
     
     var idMeta = data.metadata.filter(Obj => Obj.id == sample)[0];
     console.log(idMeta);
 
-    idFrequency = parseFloat(idMeta.wreq)
+    idFrequency = parseFloat(idMeta.wfreq)
     
     // 4. Create the trace for the gauge chart.
     var gaugeData = [
       {
-        domian: {x: [], y: []},
+        domian: {x: [0,1], y: [0,1]},
         value : idFrequency,
-        title: {text: `Belly Button Washig Frequency<br><span style='font-size:15px'><br> Scrubs per Week</span>`},
+        title: {text: `Belly Button Washing Frequency<br><span style='font-size:15px'><br>Scrubs per Week</span>`},
         type: "indicator",
-        mode: "guage+number",
+        mode: "gauge+number",
         guage:  {
-          axis: {rnge: [null, 10]},
+          axis: {range: [null, 10] },
           bar: { color: "#1f77b4"},
           steps: [
             {range: [0,2], color:"lightcoral"},
@@ -199,18 +199,14 @@ function buildCharts(sample) {
      
     ];
     
-    var guageData = [guageData];
-
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
       width: 330, height: 375, margin: {t: 0, b: 0, l: 0, r: 0}
      
     };
 
-    var guageLayout = [guageLayout];
-
     // 6. Use Plotly to plot the gauge data and layout.
-    Plotly.newPlot("gauge", guageData, guageLayout);
+    Plotly.newPlot("gauge", gaugeData, gaugeLayout);
   });
 }
 
