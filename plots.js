@@ -179,29 +179,37 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     var gaugeData = [
       {
-        domian: {x: [0,1], y: [0,1]},
-        value : idFrequency,
-        title: {text: `Belly Button Washing Frequency<br><span style='font-size:15px'><br>Scrubs per Week</span>`},
         type: "indicator",
-        mode: "gauge+number",
-        gauge: {    
-          axis: {range: [null, 10] },
-          bar: { color: "#1f77b4"},
+        mode: "gauge+number+delta",
+        value: idFrequency,
+        title: { text: "Belly Button Washing Frequency<br><span style='font-size:15px'><br>Scrubs per Week</span>", font: { size: 16 } },
+        delta: { reference: 0, increasing: { color: "RebeccaPurple" } },
+        gauge: {
+          axis: { range: [null, 10], tickwidth: 1, tickcolor: "darkblue" },
+          bar: { color: "darkblue" },
+          bgcolor: "white",
+          borderwidth: 2,
+          bordercolor: "gray",
           steps: [
-            {range: [0,2], color:"lightcoral"},
-            {range: [2,4], color:"#FFCB8E"},
-            {range: [4,6], color:"#FFCB8E"},
-            {range: [6,8], color:"#B9FF8E"},
-            {range: [8,10], color:"#5CDB73"},
-          ]
-        },
+            { range: [0, 5], color: "cyan" },
+            { range: [5, 10], color: "royalblue" }
+          ],
+          threshold: {
+            line: { color: "red", width: 4 },
+            thickness: 0.75,
+            value: 490
+          }
+        }
       }
-     
-    ];
+      ];
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      width: 330, height: 375, margin: {t: 0, b: 0, l: 0, r: 0}
+      width: 500,
+      height: 400,
+      margin: { t: 25, r: 25, l: 25, b: 25 },
+      paper_bgcolor: "lavender",
+      font: { color: "darkblue", family: "Arial" }
      
     };
 
