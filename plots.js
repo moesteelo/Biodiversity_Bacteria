@@ -191,8 +191,12 @@ function buildCharts(sample) {
           borderwidth: 2,
           bordercolor: "gray",
           steps: [
-            { range: [0, 5], color: "cyan" },
-            { range: [5, 10], color: "royalblue" }
+            { range: [0, 2], color: "cyan" },
+            { range: [2, 4], color: "turquoise" },
+            { range: [4, 6], color: "blue" },
+            { range: [6, 8], color: "azure" },
+            { range: [8, 10], color: "royalblue" },
+
           ],
           threshold: {
             line: { color: "red", width: 4 },

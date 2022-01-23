@@ -1,5 +1,5 @@
 nav {
-    background-image: url("../image/??");
+    background-image: url("bacteria.jpg");
     background-size: 100% 100%;
     border-bottom-style: solid;
     border-bottom-color: azure;
@@ -17,7 +17,7 @@ nav {
 }
 
 .btn {
-    background-color: rgba(255, 255, 255, 0.966);
+    background-color: rgba(255, 255, 255, 0.808);
     font-weight: bold;
     margin-right: 10px;
     opacity: 0.8;
