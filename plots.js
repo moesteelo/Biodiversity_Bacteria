@@ -176,7 +176,7 @@ function buildCharts(sample) {
 
     idFrequency = parseFloat(idMeta.wfreq)
     
-    // 4. Create the trace for the gauge chart.
+    
     var gaugeData = [
       {
         type: "indicator",
