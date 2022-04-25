@@ -24,7 +24,7 @@ This project presents three data charts that display bacteria samples. The Test 
  
  **HTML:** [index.html](index.html)
  
- **Images** [image](/static/image/)
+ **Images:** [image](/static/image/)
  
  
   
